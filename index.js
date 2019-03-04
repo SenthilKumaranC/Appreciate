@@ -14,7 +14,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: 'mongodb://senthil:2010mean!@localhost:27017',
+  databaseURI: 'mongodb://senthil:2010mean!@localhost:27017/master',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
